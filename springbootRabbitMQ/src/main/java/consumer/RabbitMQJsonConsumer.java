@@ -14,6 +14,6 @@ public class RabbitMQJsonConsumer {
     @RabbitListener(queues={"${rabbitmq.queue.json.name}"})
     public void consumeJsonMessage(User user){
 
-        LOGGER.info(String.format("Consumer received Json message-->%s"))
+        LOGGER.info(String.format("Consumer received Json message-->%s"));
     }
 }

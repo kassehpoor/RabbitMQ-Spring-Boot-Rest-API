@@ -17,7 +17,6 @@ public class MessageController {
         this.producer = producer;
     }
 
-    // video 11
     //http:localhost:8080/api/v1/publish?message=hello
     @GetMapping("/publish")
     public ResponseEntity<String> sendMessage(@RequestParam("message") String message){
